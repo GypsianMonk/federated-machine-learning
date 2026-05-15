@@ -1,0 +1,44 @@
+Federated round completed
+Edge latencies: [0.7362508773803711, 0.7126967906951904, 0.6113400459289551]
+TurboQuant compression ratio: 7.93x (4.04 bits/value)
+SHAP explanation generated
+Sat Apr  4 11:28:20 2026    stats.prof
+
+         3401817 function calls (3350217 primitive calls) in 16.772 seconds
+
+   Ordered by: cumulative time
+   List reduced from 13040 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+   3265/1    0.131    0.000   16.779   16.779 {built-in method builtins.exec}
+   2998/1    0.067    0.000   16.778   16.778 <frozen importlib._bootstrap>:1165(_find_and_load)
+   2973/1    0.040    0.000   16.778   16.778 <frozen importlib._bootstrap>:1120(_find_and_load_unlocked)
+   2864/1    0.030    0.000   16.777   16.777 <frozen importlib._bootstrap>:666(_load_unlocked)
+   2585/1    0.026    0.000   16.777   16.777 <frozen importlib._bootstrap_external>:934(exec_module)
+   6739/2    0.014    0.000   16.776    8.388 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+        1    0.001    0.001   16.776   16.776 D:\Federated Machine Learning\main.py:1(<module>)
+ 1047/166    0.006    0.000    9.100    0.055 {built-in method builtins.__import__}
+3547/1059    0.016    0.000    8.307    0.008 <frozen importlib._bootstrap>:1207(_handle_fromlist)
+        1    0.000    0.000    6.093    6.093 D:\Federated Machine Learning\explainability\shap_explainer.py:1(<module>)
+        1    0.000    0.000    6.090    6.090 D:\Federated Machine Learning\.venv\Lib\site-packages\shap\__init__.py:1(<module>)
+        1    0.000    0.000    5.215    5.215 D:\Federated Machine Learning\model\cnn_lstm.py:1(<module>)
+        1    0.761    0.761    5.212    5.212 D:\Federated Machine Learning\.venv\Lib\site-packages\torch\__init__.py:1(<module>)
+     2585    0.094    0.000    3.982    0.002 <frozen importlib._bootstrap_external>:1007(get_code)
+        6    0.000    0.000    3.822    0.637 C:\Users\Dell\AppData\Local\Programs\Python\Python311\Lib\threading.py:611(wait)
+       41    3.822    0.093    3.822    0.093 {method 'acquire' of '_thread.lock' objects}
+        9    0.000    0.000    3.822    0.425 C:\Users\Dell\AppData\Local\Programs\Python\Python311\Lib\threading.py:295(wait)
+        4    0.000    0.000    3.820    0.955 C:\Users\Dell\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py:199(as_completed)
+        1    0.000    0.000    3.448    3.448 D:\Federated Machine Learning\.venv\Lib\site-packages\shap\_explanation.py:1(<module>)
+     2585    0.038    0.000    2.772    0.001 <frozen importlib._bootstrap_external>:1127(get_data)
+        1    0.000    0.000    1.564    1.564 D:\Federated Machine Learning\.venv\Lib\site-packages\torch\masked\__init__.py:1(<module>)
+6555/6404    0.147    0.000    1.560    0.000 {built-in method builtins.__build_class__}
+        1    0.000    0.000    1.540    1.540 D:\Federated Machine Learning\.venv\Lib\site-packages\torch\masked\_ops.py:1(<module>)
+        1    0.000    0.000    1.534    1.534 D:\Federated Machine Learning\.venv\Lib\site-packages\torch\_prims_common\__init__.py:1(<module>)
+        1    0.001    0.001    1.529    1.529 D:\Federated Machine Learning\.venv\Lib\site-packages\sympy\__init__.py:1(<module>)
+     2585    1.519    0.001    1.519    0.001 {built-in method io.open_code}
+     2919    0.068    0.000    1.487    0.001 <frozen importlib._bootstrap>:1054(_find_spec)
+     2892    0.008    0.000    1.346    0.000 <frozen importlib._bootstrap_external>:1499(find_spec)
+     2892    0.025    0.000    1.338    0.000 <frozen importlib._bootstrap_external>:1467(_get_spec)
+     3454    0.072    0.000    1.219    0.000 <frozen importlib._bootstrap_external>:1607(find_spec)
+
+
