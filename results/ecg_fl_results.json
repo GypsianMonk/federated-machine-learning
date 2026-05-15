@@ -1,0 +1,310 @@
+{
+  "experiment": "ecg_federated_learning",
+  "timestamp": "2026-05-15T11:14:45.666586",
+  "dataset": {
+    "num_hospitals": 5,
+    "samples_per_hospital": 500,
+    "total_samples": 2500,
+    "hospitals": {
+      "0": {
+        "name": "Cardiac Center",
+        "size": 500,
+        "abnormal_ratio": 0.4,
+        "pvc_ratio": 0.3,
+        "apc_ratio": 0.1
+      },
+      "1": {
+        "name": "General Hospital",
+        "size": 500,
+        "abnormal_ratio": 0.15000000000000002,
+        "pvc_ratio": 0.1,
+        "apc_ratio": 0.05
+      },
+      "2": {
+        "name": "Geriatric Clinic",
+        "size": 500,
+        "abnormal_ratio": 0.45,
+        "pvc_ratio": 0.25,
+        "apc_ratio": 0.2
+      },
+      "3": {
+        "name": "Pediatric Ward",
+        "size": 500,
+        "abnormal_ratio": 0.2,
+        "pvc_ratio": 0.05,
+        "apc_ratio": 0.15
+      },
+      "4": {
+        "name": "Emergency Dept",
+        "size": 500,
+        "abnormal_ratio": 0.6,
+        "pvc_ratio": 0.35,
+        "apc_ratio": 0.25
+      }
+    }
+  },
+  "devices": {
+    "num_devices": 20,
+    "available_devices": 15,
+    "latency_stats": {
+      "min_ms": 4.924607263488817,
+      "max_ms": 215.2527863798026,
+      "mean_ms": 97.21428029909944,
+      "std_ms": 70.06630369302188,
+      "median_ms": 94.7063481724615
+    },
+    "compute_speed_stats": {
+      "min": 0.4202451443980587,
+      "max": 5.958612799190277,
+      "mean": 1.6172947942567677,
+      "std": 1.5528888184871474
+    },
+    "device_type_distribution": {
+      "wearable_patch": 8,
+      "bedside_monitor": 4,
+      "smartphone": 6,
+      "gateway": 2
+    }
+  },
+  "fedavg": {
+    "final_accuracy": 0.976,
+    "avg_latency_ms": 151.28753956117453,
+    "round_history": [
+      {
+        "round": 0,
+        "global_accuracy": 0.756,
+        "avg_latency_ms": 144.145278413822,
+        "avg_client_accuracy": 0.65
+      },
+      {
+        "round": 1,
+        "global_accuracy": 0.924,
+        "avg_latency_ms": 160.5045263437459,
+        "avg_client_accuracy": 0.9099999999999999
+      },
+      {
+        "round": 2,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 144.145278413822,
+        "avg_client_accuracy": 0.985
+      },
+      {
+        "round": 3,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 174.3839675263631,
+        "avg_client_accuracy": 0.97
+      },
+      {
+        "round": 4,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 160.5045263437459,
+        "avg_client_accuracy": 0.975
+      },
+      {
+        "round": 5,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 144.145278413822,
+        "avg_client_accuracy": 0.985
+      },
+      {
+        "round": 6,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 144.145278413822,
+        "avg_client_accuracy": 0.985
+      },
+      {
+        "round": 7,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_client_accuracy": 0.995
+      },
+      {
+        "round": 8,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 160.5045263437459,
+        "avg_client_accuracy": 0.975
+      },
+      {
+        "round": 9,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 160.5045263437459,
+        "avg_client_accuracy": 0.975
+      },
+      {
+        "round": 10,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_client_accuracy": 0.995
+      },
+      {
+        "round": 11,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 198.8935384498787,
+        "avg_client_accuracy": 0.96
+      },
+      {
+        "round": 12,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 144.145278413822,
+        "avg_client_accuracy": 0.985
+      },
+      {
+        "round": 13,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_client_accuracy": 0.995
+      },
+      {
+        "round": 14,
+        "global_accuracy": 0.976,
+        "avg_latency_ms": 174.3839675263631,
+        "avg_client_accuracy": 0.97
+      }
+    ]
+  },
+  "ldfl": {
+    "final_accuracy": 0.976,
+    "avg_latency_ms": 119.63570749030644,
+    "round_history": [
+      {
+        "round": 0,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.8715300559997559,
+        "avg_client_accuracy": 0.74,
+        "global_accuracy": 0.88,
+        "round_time_sec": 4.51613712310791
+      },
+      {
+        "round": 1,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 2.1615209579467773,
+        "avg_client_accuracy": 0.8899999999999999,
+        "global_accuracy": 0.85,
+        "round_time_sec": 5.262911081314087
+      },
+      {
+        "round": 2,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 2.058642625808716,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.8967273235321045
+      },
+      {
+        "round": 3,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.801045536994934,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.581091403961182
+      },
+      {
+        "round": 4,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 2.190846562385559,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 5.378879070281982
+      },
+      {
+        "round": 5,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.7898162603378296,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.421067953109741
+      },
+      {
+        "round": 6,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 2.0786356925964355,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 5.140229225158691
+      },
+      {
+        "round": 7,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 2.152474284172058,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 5.238810777664185
+      },
+      {
+        "round": 8,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.8388913869857788,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.579829454421997
+      },
+      {
+        "round": 9,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.8219199180603027,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.598586559295654
+      },
+      {
+        "round": 10,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.8497618436813354,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.561233997344971
+      },
+      {
+        "round": 11,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.7885383367538452,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.396873950958252
+      },
+      {
+        "round": 12,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.9581955671310425,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.661754846572876
+      },
+      {
+        "round": 13,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 2.06222665309906,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 5.100760221481323
+      },
+      {
+        "round": 14,
+        "selected_clients": 2,
+        "avg_latency_ms": 119.63570749030643,
+        "avg_train_time_sec": 1.851403832435608,
+        "avg_client_accuracy": 0.995,
+        "global_accuracy": 0.976,
+        "round_time_sec": 4.4986631870269775
+      }
+    ]
+  },
+  "improvements": {
+    "accuracy_gain": 0.0,
+    "latency_reduction_pct": 20.921638465849572
+  }
+}
